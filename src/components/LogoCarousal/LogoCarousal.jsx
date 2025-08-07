@@ -1,7 +1,7 @@
 import React from "react";
 import "./LogoCarousel.css";
 import dribbble from "../../assets/dribbble.svg";
-import awwwards from "../../assets/awwwards.svg";
+import awwwards from "../../assets/awards.svg";
 import behance from "../../assets/behance.svg";
 import cssDesign from "../../assets/cssdesign.svg";
 
