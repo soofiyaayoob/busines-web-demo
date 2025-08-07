@@ -1,0 +1,285 @@
+.portfolio-section-container {
+  padding: 0px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+}
+
+.portfolio-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.header-content {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.badge-container {
+  width: fit-content;
+}
+
+.portfolio-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 30px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 20.3px;
+}
+
+.portfolio-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 0;
+  max-width: 100%;
+}
+
+.header-description {
+  flex: 1 1 300px;
+  max-width: 500px;
+  align-self: flex-end;
+  padding-right: 0;
+}
+
+.header-description p {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 23.2px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.portfolio-content {
+  width: 100%;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 22px;
+  margin-bottom: 40px;
+}
+
+.portfolio-item {
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  aspect-ratio: 1 / 1; 
+}
+
+.portfolio-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+}
+
+.portfolio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 100%);
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.portfolio-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.see-all-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.see-all-button {
+  background: #FFBE0D;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.see-all-button:hover {
+  background: #e6a80c;
+  transform: translateY(-2px);
+}
+
+.see-all-button span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.2px;
+  color: #000000;
+}
+
+.see-all-button svg {
+  width: 16px;
+  height: 17px;
+  color: #000000;
+}
+
+
+@media (max-width: 830px) {
+  .portfolio-section-container {
+    padding: 0px 50px;
+    gap: 32px;
+  }
+
+  .portfolio-heading {
+    font-size: 42px;
+  }
+
+  .header-description p {
+    font-size: 15px;
+  }
+
+  .portfolio-grid {
+    gap: 18px;
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .see-all-button span {
+    font-size: 15px;
+  }
+  .portfolio-title{
+    font-size: 15px;
+     font-weight: 400;
+  }
+}
+@media (max-width:600px) {
+  .portfolio-section-container{
+    padding: 0 10px;
+  }
+}
+@media (max-width: 440px) {
+  .portfolio-section-container {
+    padding: 0px 30px;
+    gap: 28px;
+  }
+
+  .portfolio-heading {
+    font-size: 36px;
+  }
+
+  .header-description p {
+    font-size: 14px;
+  }
+
+  .portfolio-title {
+    /* font-size: 16px; */
+  
+  }
+    .portfolio-grid{
+     grid-template-columns: repeat(1, 1fr); 
+    
+  }.portfolio-item{
+    aspect-ratio: 3/2;
+  }
+
+  .see-all-button {
+    padding: 8px 18px;
+  }
+
+  .see-all-button span {
+    font-size: 14px;
+  }
+
+  .see-all-button svg {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media (max-width: 390px) {
+  .portfolio-heading {
+    font-size: 30px;
+  }
+
+  .header-description p {
+    font-size: 13px;
+  }
+
+  .portfolio-title {
+    font-size: 15px;
+  }
+
+  .see-all-button span {
+    font-size: 13px;
+  }
+
+  .see-all-button svg {
+    width: 12px;
+    height: 12px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  .portfolio-section-container {
+    padding: 0px 16px;
+    gap: 24px;
+  }
+
+  .portfolio-heading {
+    font-size: 26px;
+  }
+
+  .header-description p {
+    font-size: 12.5px;
+  }
+
+  .portfolio-title {
+    font-size: 14px;
+  }
+
+  .see-all-button {
+    padding: 6px 14px;
+    gap: 6px;
+  }
+
+  .see-all-button span {
+    font-size: 12px;
+  }
+
+  .see-all-button svg {
+    width: 10px;
+    height: 10px;
+  }
+}
