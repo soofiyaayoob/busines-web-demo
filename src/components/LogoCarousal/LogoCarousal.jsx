@@ -2,7 +2,7 @@ import React from "react";
 import "./LogoCarousel.css";
 import dribbble from "../../assets/dribbble.svg";
 import awwwards from "../../assets/Awards.svg";
-import behance from "../../assets/behance.svg";
+import behance from "../../assets/Behance.svg";
 import cssDesign from "../../assets/cssdesign.svg";
 
 function LogoCarousel() {
