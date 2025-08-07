@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./about.css";
 import leftLeaf from "../../assets/left-leaf.svg";
 import rightLeaf from "../../assets/right-leaf.svg";
 
