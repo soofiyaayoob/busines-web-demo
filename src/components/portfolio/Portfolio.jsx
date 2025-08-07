@@ -1,5 +1,5 @@
 import React from 'react';
-import './portfolio.css';
+import './Portfolio.css';
 import ArrowIconBlack from '../../assets/ArrowIconBlack.svg';
 
 import project5 from '../../assets/project5.svg'; 
