@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./navbar.css";
-import arrowIcon from "../../assets/ArrowIconYellow.svg";
+import arrowIcon from "../../assets/arrowIconYellow.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
