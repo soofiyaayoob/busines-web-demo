@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "./hero.css";
 import connectus from "../../assets/ArrowIconBlack.svg";
 import ratingbox from "../../assets/ratingbox.svg";
 
